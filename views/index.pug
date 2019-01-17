@@ -26,8 +26,8 @@ block body
             li(ng-class='{active: $route.current.activetab == "peerList"}')
               a(href='/peers') Peers
           ul.nav.navbar-nav.navbar-right
-            li(ng-class='{active: $route.current.activetab == "profile"}')
-              a(href='/profile') My profile
+            <!--li(ng-class='{active: $route.current.activetab == "profile"}')
+              a(href='/profile') My profile-->
             li
               div.btn-nav
                 button(style='margin-left: 10px;' ng-click='logout()').btn.btn-primary.btn-small.navbar-btn Logout

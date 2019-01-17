@@ -6,11 +6,11 @@ angular.module('BuddyPairApp', ['BuddyPairApp.controllers', 'BuddyPairApp.servic
   .config(function ($routeProvider, $locationProvider, $authProvider, $compileProvider) {
     $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|tel|file|blob):/);
     $routeProvider
-      .when('/profile', {
+/*      .when('/profile', {
         templateUrl: '/partials/profile',
         controller: 'ProfileCtrl',
         activetab: 'profile'
-      })
+      })*/
       .when('/erasmus', {
         templateUrl: '/partials/erasmusList',
         controller: 'ErasmusListCtrl',
@@ -61,7 +61,7 @@ angular.module('BuddyPairApp', ['BuddyPairApp.controllers', 'BuddyPairApp.servic
     $locationProvider.html5Mode(true);
 
     $authProvider.google({
-      clientId: '83414652329-fajrap1l590te27mjc8jec8q393okmfv.apps.googleusercontent.com'
+      clientId: '83414652329-0ji7glc5i4ep5lvlohue7ne3ktga7gg2.apps.googleusercontent.com',
     });
   });
 

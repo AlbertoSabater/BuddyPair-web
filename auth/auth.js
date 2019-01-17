@@ -28,7 +28,7 @@ function createJWT(profile) {
  |--------------------------------------------------------------------------
  */
 exports.googleAuth = function(req, res) {
-  var accessTokenUrl = 'https://accounts.google.com/o/oauth2/token';
+  var accessTokenUrl = 'https://oauth2.googleapis.com/token';
   var peopleApiUrl = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
   var params = {
     code: req.body.code,
